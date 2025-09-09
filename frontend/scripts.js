@@ -1,4 +1,4 @@
-const API_URL = 'https://https://vercel.com/larissas-projects-0ec17445/estacionamentosn'; // substitua pelo link real da sua API
+const API_URL = 'https://vercel.com/larissas-projects-0ec17445/estacionamentosn'; // substitua pelo link real da sua API
 
 document.getElementById('btn-listar-veiculos').addEventListener('click', async () => {
   const res = await fetch(`${API_URL}/veiculos`);
