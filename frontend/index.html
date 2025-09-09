@@ -7,30 +7,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>API Estacionamento</h1>
+  <h1>Estacionamento</h1>
 
-  <h2>Veículos</h2>
-  <button id="btn-listar-veiculos">Listar Veículos</button>
-  <ul id="lista-veiculos"></ul>
+  <section>
+    <h2>Veículos</h2>
+    <button id="btn-listar-veiculos">Listar Veículos</button>
+    <ul id="lista-veiculos"></ul>
 
-  <h2>Adicionar Veículo</h2>
-  <form id="form-veiculo">
-    <input type="text" name="placa" placeholder="Placa" required>
-    <input type="text" name="proprietario" placeholder="Proprietário" required>
-    <input type="text" name="modelo" placeholder="Modelo" required>
-    <input type="text" name="marca" placeholder="Marca" required>
-    <input type="text" name="cor" placeholder="Cor">
-    <input type="number" name="ano" placeholder="Ano">
-    <input type="text" name="telefone" placeholder="Telefone" required>
-    <select name="tipo" required>
-      <option value="CARRO">Carro</option>
-      <option value="MOTO">Moto</option>
-      <option value="VAN">Van</option>
-      <option value="CAMINHAO">Caminhão</option>
-      <option value="ONIBUS">Ônibus</option>
-    </select>
-    <button type="submit">Adicionar</button>
-  </form>
+    <h3>Adicionar Veículo</h3>
+    <form id="form-veiculo">
+      <input type="text" name="placa" placeholder="Placa" required>
+      <input type="text" name="proprietario" placeholder="Proprietário" required>
+      <input type="text" name="modelo" placeholder="Modelo" required>
+      <input type="text" name="marca" placeholder="Marca" required>
+      <input type="text" name="cor" placeholder="Cor">
+      <input type="number" name="ano" placeholder="Ano">
+      <input type="text" name="telefone" placeholder="Telefone" required>
+      <select name="tipo" required>
+        <option value="CARRO">Carro</option>
+        <option value="MOTO">Moto</option>
+        <option value="VAN">Van</option>
+        <option value="CAMINHAO">Caminhão</option>
+        <option value="ONIBUS">Ônibus</option>
+      </select>
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Estadias</h2>
+    <button id="btn-listar-estadias">Listar Estadias</button>
+    <ul id="lista-estadias"></ul>
+
+    <h3>Adicionar Estadia</h3>
+    <form id="form-estadia">
+      <input type="text" name="placa" placeholder="Placa do Veículo" required>
+      <input type="number" name="valorHora" placeholder="Valor por Hora" step="0.01" required>
+      <button type="submit">Adicionar Estadia</button>
+    </form>
+  </section>
 
   <script src="script.js"></script>
 </body>
